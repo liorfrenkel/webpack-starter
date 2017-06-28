@@ -1,1 +1,1 @@
-A starter project with some webpack examples
+A starter project with some example use of webpack
