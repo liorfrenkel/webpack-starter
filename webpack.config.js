@@ -1,5 +1,6 @@
 const path = require('path');
 const webpack = require('webpack');
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   context: path.resolve(__dirname, './src'),
@@ -7,12 +8,14 @@ module.exports = {
     app: './app.js',
   },
   output: {
-    path: path.resolve(__dirname, './dist/assets/'),
+    path: path.resolve(__dirname, './dist/'),
     filename: '[name].bundle.js',
-    publicPath: '/assets/',
   },
   plugins: [
     new webpack.optimize.ModuleConcatenationPlugin(),
+    new HtmlWebpackPlugin({
+      template: path.resolve(__dirname, './src/html/index.html'),
+    }),
   ],
   devServer: {
     contentBase: path.resolve(__dirname, './src'),  // New
