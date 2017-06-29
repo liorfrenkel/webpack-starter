@@ -4,6 +4,7 @@
   "description": "A starter project using webpack, npm scripts and babel",
   "main": "./src/app.js",
   "scripts": {
+    "start": "npm run dev",
     "clean": "rimraf dist",
     "dev": "webpack-dev-server",
     "build": "npm run clean && webpack && copyfiles -u 1 src/index.html dist/",
