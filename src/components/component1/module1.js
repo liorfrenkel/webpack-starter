@@ -1,7 +1,3 @@
-/**
- * Module1 is a 
- */
-
 import style from './style.css';
 import template from './template.html';
 

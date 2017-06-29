@@ -1,7 +1,7 @@
 // entry point
 
 // js
-import object1 from './js/module1/module1';
+import object1 from './components/component1/module1';
 import object2 from './js/module2';
 
 // css
